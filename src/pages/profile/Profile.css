@@ -1,0 +1,25 @@
+.sidebar-nav-container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 550px;
+    /* border: 1px solid black; */
+    border-top: none;
+    padding-top: 30px;
+    box-shadow:  5px 0 5px -5px rgba(0, 0, 0, 0.5)
+}
+
+.nav-link{
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 25px;
+    /* padding-right: 10px; */
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: #2980b9;
+}
