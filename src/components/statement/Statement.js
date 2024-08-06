@@ -122,7 +122,7 @@ const Statement = () => {
           <div className='ac-details-section'>
             <label>Current balance</label>
             <div className='cln'>:</div>
-            <div>{currentBalance}</div>
+            <div> &#8377;{currentBalance}</div>
           </div>
           <div>
           </div>

@@ -5,10 +5,10 @@ const Banking = () => {
 
   return (
     <div className='dashboard-container'>
-        <Sidebar />
-        <div className='outlet'>
+      <Sidebar />
+      <div className='outlet'>
         <Outlet />
-        </div>
+      </div>
     </div>
   )
 }

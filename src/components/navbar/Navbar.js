@@ -9,7 +9,7 @@ const Navbar = () => {
     setIsLogin(false)
     localStorage.removeItem('token');
   }
-  
+
   useEffect(() => {
     let token = localStorage.getItem('token');
     if (token) {
@@ -18,7 +18,7 @@ const Navbar = () => {
       setIsLogin(false)
     }
   })
-  
+
   return (
     <div className='nav-container'>
       <div className='nav-left-container'>
@@ -28,9 +28,6 @@ const Navbar = () => {
         <div className='nav-left-tab'>
           <NavLink to='/banking'>Banking</NavLink>
         </div>
-        {/* <div className='nav-left-tab'>
-          <NavLink to='/profile'>Profile</NavLink>
-        </div> */}
       </div>
 
       <div className='nav-right-container'>
@@ -45,6 +42,9 @@ const Navbar = () => {
           </>
         ) : (
           <>
+            {/* <div className='nav-left-tab'>
+              <NavLink to='/profile'>Profile</NavLink>
+            </div> */}
             <div className='nav-right-tab'>
               <NavLink to='/login' onClick={handleLogout}>Logout</NavLink>
             </div>
